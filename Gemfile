@@ -19,3 +19,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 2'               # Behavior Driven Development
   gem 'sqlite3', '~> 1.3.6'               # SQLite
 end
+
+group :development do
+  gem 'annotate', '~> 2.4'                # Annotate routes and models
+end
