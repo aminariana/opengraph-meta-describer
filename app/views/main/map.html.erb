@@ -1,6 +1,5 @@
 <% content_for :meta do %>
-  <!-- Default Meta -->
-  <title>Opengraph Meta Describer</title>
+  <title><%= @title %></title>
   <link rel="author" href="https://plus.google.com/112746119485051615074">
   <meta name="author" content="Amin Ariana">
   <meta name="copyright" content="Amin Ariana <%= Date.today.year %>">
@@ -8,5 +7,10 @@
   <meta name="keywords" content="keywords">
 <% end %>
 
-<h1>Opengraph Meta Descriptor</h1>
-<p>Success!</p>
+<h1><%= @title %></h1>
+<p>Status: Success!</p>
+<p>Redirecting to <%= link_to @callback, @callback %> momentarily.</p>
+<small>
+  Meta wrap provided by: 
+  <a href="https://github.com/aminariana/opengraph-meta-describer">Opengraph Meta Descriptor</a>
+</small>
