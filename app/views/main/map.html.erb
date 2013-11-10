@@ -9,6 +9,10 @@
   <meta property="og:image" content="<%= @image %>">
   <meta property="og:title" content="<%= @title %>">
   <meta property="og:site_name" content="<%= @site_name %>">
+  <meta http-equiv="refresh" content="0; url=<%= @callback %>" />
+  <script type="text/javascript">
+    window.location.href = "<%= @callback %>"
+  </script>
   <!--meta property="og:url" content="<%= @callback %>"-->
 <% end %>
 
