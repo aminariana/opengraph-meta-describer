@@ -3,5 +3,8 @@ class MainController < ApplicationController
   end
 
   def map
+    @errors = []
+    @errors << "Missing callback URL param 'callback'." unless params[:callback]
+    render :error unless @errors.empty?
   end
 end
