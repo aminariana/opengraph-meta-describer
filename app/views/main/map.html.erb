@@ -6,6 +6,7 @@
   <meta name="description" content="<%= @description %>">
   <meta name="keywords" content="keywords">
   <meta property="og:description" content="<%= @description %>">
+  <meta property="og:image" content="<%= @image %>">
   <meta property="og:title" content="<%= @title %>">
   <meta property="og:site_name" content="<%= @site_name %>">
   <!--meta property="og:url" content="<%= @callback %>"-->
@@ -13,6 +14,9 @@
 
 <h1><%= "#{@site_name} :: #{@title}" %></h1>
 <p><%= @description %></p>
+<%= link_to @image do %>
+  <%= image_tag @image, :style => "width: 200px;" %>
+<% end %>
 <p>Success! Redirecting to <%= link_to @callback, @callback %> momentarily.</p>
 <small>
   Meta wrap provided by: 
