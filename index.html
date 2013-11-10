@@ -1,64 +1,86 @@
 <!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Opengraph-meta-describer by aminariana</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Opengraph-meta-describer</h1>
-        <p>Makes a webpage that looks ugly when shared on Facebook beautiful, this service is an analog to a URL shortening API that takes a URL to a web page plus a few meta descriptions about that web page, and creates a wrapping webpage for it, augmented with Open-Graph supported meta data. This way, the input URL, which may originally look ugly when shared on Facebook, can look presentable, because Facebook can scrape the auxiliary meta info from the wrapping page. Nothing is actually stored in the service. The response simply reflects the parameters provided in the GET request as Open Graph META tags.</p>
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
 
-        <p class="view"><a href="https://github.com/aminariana/opengraph-meta-describer">View the Project on GitHub <small>aminariana/opengraph-meta-describer</small></a></p>
+  <title>Opengraph-meta-describer</title>
+  <meta name="description" content="Makes a webpage that looks ugly, shared on Facebook with &quot;preview&quot; care and beauty! All by injecting Open Graph META tags.">
 
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <ul>
-          <li><a href="https://github.com/aminariana/opengraph-meta-describer/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/aminariana/opengraph-meta-describer/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/aminariana/opengraph-meta-describer">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Opengraph-meta-describer</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Makes a webpage that looks ugly, shared on Facebook with &quot;preview&quot; care and beauty! All by injecting Open Graph META tags.</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/aminariana/opengraph-meta-describer/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/aminariana/opengraph-meta-describer/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/aminariana/opengraph-meta-describer" class="code">View Opengraph-meta-describer on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
 <a name="opengraph-meta-describer" class="anchor" href="#opengraph-meta-describer"><span class="octicon octicon-link"></span></a>opengraph-meta-describer</h1>
 
-<p>Makes a webpage that looks ugly when shared on Facebook beautiful.</p>
+<p>Makes a webpage that looks ugly, shared on Facebook with "preview" care and beauty! All by injecting Open Graph META tags.</p>
 
 <p>This service is an analog to a URL shortening API that takes a URL to a web page plus a few meta descriptions about that web page, and creates a wrapping webpage for it, augmented with Open-Graph supported meta data. This way, the input URL, which may originally look ugly when shared on Facebook, can look presentable, because Facebook can scrape the auxiliary meta info from the wrapping page. Nothing is actually stored in the service. The response simply reflects the parameters provided in the GET request as Open Graph META tags.</p>
 
 <h2>
 <a name="live-production-instance" class="anchor" href="#live-production-instance"><span class="octicon octicon-link"></span></a>Live production instance</h2>
 
-<p>The main production instance and example are available at:
-<a href="http://opengraph-meta-describer.herokuapp.com/">http://opengraph-meta-describer.herokuapp.com/</a></p>
+<p>The main production instance and example are available at:</p>
 
-<h2>
+<ul>
+<li><a href="http://opengraph-meta-describer.herokuapp.com/">http://opengraph-meta-describer.herokuapp.com/</a></li>
+</ul><h2>
 <a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h2>
 
-<p>The main API is the following path treated as a function:
-<a href="http://opengraph-meta-describer.herokuapp.com/map">http://opengraph-meta-describer.herokuapp.com/map</a>?</p>
-
-<p><strong>The request parameters accepted:</strong></p>
+<p>The main API is the following path treated as a function:</p>
 
 <ul>
-<li>TBD</li>
+<li>
+<a href="http://opengraph-meta-describer.herokuapp.com/map">http://opengraph-meta-describer.herokuapp.com/map</a>?</li>
+</ul><p><strong>The request parameters accepted:</strong></p>
+
+<ul>
+<li>title: The title of the page you want to render on Facebook</li>
+<li>description: The description preview you want to render on Facebook</li>
+<li>site_name: The name of your web site</li>
+<li>image: The absolute URL of the image you want rendered on Facebook</li>
+<li>callback: The landing URL to which the user will be redirected if they click the shared post</li>
 </ul><p><strong>The expected response header:</strong></p>
 
-<ul>
-<li>TBD</li>
-</ul><p><strong>The expected response behavior from the user's perspective:</strong></p>
+<pre><code>  &lt;title&gt;&lt;%= @title %&gt;&lt;/title&gt;
+  &lt;meta name="description" content="&lt;%= @description %&gt;"&gt;
+  &lt;meta name="keywords" content="keywords"&gt;
+  &lt;meta property="og:description" content="&lt;%= @description %&gt;"&gt;
+  &lt;meta property="og:image" content="&lt;%= @image %&gt;"&gt;
+  &lt;meta property="og:title" content="&lt;%= @title %&gt;"&gt;
+  &lt;meta property="og:site_name" content="&lt;%= @site_name %&gt;"&gt;
+</code></pre>
+
+<p><strong>The expected response behavior from the user's perspective:</strong></p>
 
 <ul>
-<li>TBD</li>
+<li>User will temporarily land on our production server, and will be immediately redirected to the Callback URL provided.</li>
 </ul><h2>
 <a name="benefits" class="anchor" href="#benefits"><span class="octicon octicon-link"></span></a>Benefits</h2>
 
@@ -69,14 +91,39 @@
 <h2>
 <a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
 
-<p>TBD</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/aminariana">aminariana</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+<p>You have a boring site such as: <a href="http://www.aminariana.com">http://www.aminariana.com</a>. Try sharing that on Facebook... yeah, see? Do not dispair! You can now make it more interesting when shared on Facebook:</p>
+
+<pre><code>http://opengraph-meta-describer.herokuapp.com/map?callback=http://aminariana.com&amp;title=I%20don't%20always%20meta-meta-describe%20my%20shared%20webpages&amp;description=But%20when%20I%20do,%20it's%20because%20I%20forgot%20to%20meta%20describe%20them%20in%20the%20original%20code&amp;site_name=Amin%20Ariana&amp;image=http://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Jonathan_Goldsmith_2009.jpg/400px-Jonathan_Goldsmith_2009.jpg
+</code></pre>
+
+<p>Try sharing that long link on Facebook, then clicking it. Hopefully that'll give you the Aha moment.</p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>MIT License. Use with credit and care.</p>
+
+<p>That's all folks. Happy hacking.</p>
+        </article>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/aminariana" class="avatar"><img src="https://2.gravatar.com/avatar/8bb6b72b851fcd133490fc9cc28e9505?d=https%3A%2F%2Fidenticons.github.com%2Ff542a79d401703a815e08961bdaa8440.png&amp;r=x&amp;s=60" width="48" height="48"/></a> <a href="https://github.com/aminariana">aminariana</a> maintains <a href="https://github.com/aminariana/opengraph-meta-describer">Opengraph-meta-describer</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/aminariana/opengraph-meta-describer/tarball/master" class="tar">tar</a><a href="https://github.com/aminariana/opengraph-meta-describer/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
 </html>
