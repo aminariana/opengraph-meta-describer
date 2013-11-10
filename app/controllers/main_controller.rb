@@ -5,6 +5,7 @@ class MainController < ApplicationController
   def map
     @errors = []
     @errors << "Missing Page Title param 'title'." unless @title = params[:title]
+    @errors << "Missing Site Name param 'site_name'." unless @site_name = params[:site_name]
     @errors << "Missing Page Description param 'description'." unless @description = params[:description]
     @errors << "Missing Callback URL param 'callback'." unless @callback = params[:callback]
     @errors << "Callback URL '#{@callback}' is not a valid absolute URL." unless @callback and @callback =~ /^#{URI::ABS_URI}$/
