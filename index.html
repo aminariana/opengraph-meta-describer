@@ -46,19 +46,27 @@
 <h2>
 <a name="live-production-instance" class="anchor" href="#live-production-instance"><span class="octicon octicon-link"></span></a>Live production instance</h2>
 
-<p>The main production instance and example are available at:</p>
+<p>The main production instance for your use:</p>
 
 <ul>
 <li><a href="http://opengraph-meta-describer.herokuapp.com/">http://opengraph-meta-describer.herokuapp.com/</a></li>
 </ul><h2>
 <a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h2>
 
-<p>The main API is the following path treated as a function:</p>
+<p>Author:</p>
+
+<ul>
+<li><a href="http://www.aminariana.com">http://www.aminariana.com</a></li>
+</ul><p>Documentation site:</p>
+
+<ul>
+<li><a href="http://aminariana.github.io/opengraph-meta-describer/">http://aminariana.github.io/opengraph-meta-describer/</a></li>
+</ul><p>The main API is the following path, used in GET requests:</p>
 
 <ul>
 <li>
 <a href="http://opengraph-meta-describer.herokuapp.com/map">http://opengraph-meta-describer.herokuapp.com/map</a>?</li>
-</ul><p><strong>The request parameters accepted:</strong></p>
+</ul><p><strong>The GET request parameters accepted:</strong></p>
 
 <ul>
 <li>title: The title of the page you want to render on Facebook</li>
@@ -66,7 +74,7 @@
 <li>site_name: The name of your web site</li>
 <li>image: The absolute URL of the image you want rendered on Facebook</li>
 <li>callback: The landing URL to which the user will be redirected if they click the shared post</li>
-</ul><p><strong>The expected response header:</strong></p>
+</ul><p><strong>The expected response header META tags:</strong></p>
 
 <pre><code>  &lt;title&gt;&lt;%= @title %&gt;&lt;/title&gt;
   &lt;meta name="description" content="&lt;%= @description %&gt;"&gt;
@@ -109,7 +117,7 @@
     </div>
     <footer>
       <div class="owner">
-      <p><a href="https://github.com/aminariana" class="avatar"><img src="https://2.gravatar.com/avatar/8bb6b72b851fcd133490fc9cc28e9505?d=https%3A%2F%2Fidenticons.github.com%2Ff542a79d401703a815e08961bdaa8440.png&amp;r=x&amp;s=60" width="48" height="48"/></a> <a href="https://github.com/aminariana">aminariana</a> maintains <a href="https://github.com/aminariana/opengraph-meta-describer">Opengraph-meta-describer</a></p>
+      <p><a href="https://github.com/aminariana" class="avatar"><img src="https://0.gravatar.com/avatar/8bb6b72b851fcd133490fc9cc28e9505?d=https%3A%2F%2Fidenticons.github.com%2Ff542a79d401703a815e08961bdaa8440.png&amp;r=x&amp;s=60" width="48" height="48"/></a> <a href="https://github.com/aminariana">aminariana</a> maintains <a href="https://github.com/aminariana/opengraph-meta-describer">Opengraph-meta-describer</a></p>
 
 
       </div>
