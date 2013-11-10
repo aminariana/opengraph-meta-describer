@@ -9,23 +9,29 @@ This service is an analog to a URL shortening API that takes a URL to a web page
 Live production instance
 ------------------------
 
-The main production instance and example are available at:
+The main production instance for your use:
 - http://opengraph-meta-describer.herokuapp.com/
 
 Documentation
 -------------
 
-The main API is the following path treated as a function:
+Author:
+- http://www.aminariana.com
+
+Documentation site:
+- http://aminariana.github.io/opengraph-meta-describer/
+
+The main API is the following path, used in GET requests:
 - http://opengraph-meta-describer.herokuapp.com/map?
 
-**The request parameters accepted:**
+**The GET request parameters accepted:**
 - title: The title of the page you want to render on Facebook
 - description: The description preview you want to render on Facebook
 - site_name: The name of your web site
 - image: The absolute URL of the image you want rendered on Facebook
 - callback: The landing URL to which the user will be redirected if they click the shared post
 
-**The expected response header:**
+**The expected response header META tags:**
 ```
   <title><%= @title %></title>
   <meta name="description" content="<%= @description %>">
